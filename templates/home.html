@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stripe Demo</title>
+</head>
+
+<body>
+
+<h1>Buy Coffee ☕</h1>
+
+<h2>$10</h2>
+
+<form action="{% url 'checkout' %}" method="POST">
+    {% csrf_token %}
+    <button type="submit">
+        Buy Coffee
+    </button>
+</form>
+
+</body>
+</html>
